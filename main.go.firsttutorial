@@ -41,8 +41,7 @@ func main() {
 		log.Panic(err, "...FOOBAR'd")
 	}
 	log.Println("Good to go")
-	db.Debug().DropTableIfExists(&User{})
-	db.Debug().AutoMigrate(&User{})
+
 
 	db.Debug().DropTableIfExists(&UserModel{})
 	db.Debug().AutoMigrate(&UserModel{})
